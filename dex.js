@@ -1,5 +1,8 @@
 // This is where I will put the pokedex or Dex function
 
+import Pokecard from "./pokecard";
+
+
 function Pokedex({ pokemon }) {
     return (
         // The .map goes to all the data 
@@ -32,3 +35,4 @@ Pokedex.defaultProps = {
     ],
 };
 
+export default dex;
