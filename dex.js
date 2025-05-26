@@ -8,6 +8,7 @@ function Pokedex({ pokemon }) {
         // The .map goes to all the data 
         <div className="Pokedex">
             {pokemon.map((p) => {
+               return (
                 <Pokecard
                 key={p.id}
                 id={p.id}
@@ -15,6 +16,8 @@ function Pokedex({ pokemon }) {
                 type={p.type}
                 base_experience={p.base_experience}
                 />
+            );
+                
             })}
         </div>
     );
